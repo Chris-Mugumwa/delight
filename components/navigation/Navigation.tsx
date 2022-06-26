@@ -54,7 +54,7 @@ const Navigation = () => {
 
 	return (
 		<>
-			<nav className='fixed top-0 flex items-center justify-between w-full px-12 py-3 min-h-[5rem] bg-gray-light dark:bg-blue-dark z-40'>
+			<nav className='fixed top-0 flex items-center justify-between w-full px-6 lg:px-12 py-3 min-h-[5rem] bg-gray-light dark:bg-blue-dark z-50'>
 				<Delight className='' />
 
 				<div
