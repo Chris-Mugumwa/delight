@@ -37,10 +37,6 @@ const Footer = () => {
 					))}
 				</ul>
 			</div>
-
-			<h5 className='mt-4 font-merriweather-sans text-blue-darker dark:text-gray-light'>
-				Copyright <span>&#169;</span> Reserved{' '}
-			</h5>
 		</footer>
 	)
 }

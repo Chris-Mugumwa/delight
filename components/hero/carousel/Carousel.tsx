@@ -36,6 +36,7 @@ const Carousel = () => {
 							}>
 							<Image
 								src={`${custard.url}`}
+								alt={`${custard.alt}`}
 								width='460'
 								height='512'
 								className='relative z-40 lg:scale-150'
