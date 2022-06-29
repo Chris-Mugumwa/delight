@@ -1,22 +1,22 @@
 const Description = () => {
 	return (
-		<main className='flex flex-col justify-center w-full gap-4 px-6 py-24 text-center lg:py-8 text-blue-dark dark:text-gray-light font-catamaran lg:w-1/2 lg:text-lg'>
-			<h2 className='text-2xl font-medium font-catamaran lg:text-3xl'>
+		<main className='flex flex-col justify-center w-full gap-4 px-6 py-24 font-medium text-center lg:py-8 dark:text-gray-light lg:w-1/2 lg:text-lg font-merriweather-sans text-gray-dark'>
+			<h2 className='text-2xl font-semibold dark:text-blue-light text-blue-dark font-catamaran lg:text-3xl'>
 				Proudly South African
 			</h2>
 			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-				officiis delectus repellat in blanditiis odio ratione ea laboriosam
-				repellendus possimus a nemo, tempora eaque, excepturi iusto tenetur
-				quia cum aliquam!
+				We are a proud South African brand dedicated to creating healthy,
+				yet delicious frozen custard recipes for your enjoyment. Who said a
+				tasty treat couldn't be healthy too.
 			</p>
 
 			<p>
-				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus
-				voluptatem, dicta officia aspernatur eius, amet fuga provident aut
-				omnis iste ab nam reprehenderit quasi excepturi recusandae fugit!
-				Blanditiis itaque natus temporibus ratione. Illo, at alias totam
-				vero animi earum inventore. Odit, dignissimos. Quisquam, rerum quae?
+				Eating healthy is an essential lifestyle change we believe everyone
+				should make. Delight is dedicated towards making healthy and
+				environmentally friendly frozen custard recipes. We let you know
+				exactly what goes into our recipes allowing for full honesty and
+				transparency in our brand. Head on over to our catalog and check out
+				what we have to offer!
 			</p>
 		</main>
 	)

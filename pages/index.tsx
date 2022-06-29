@@ -1,10 +1,11 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { Navigation, Hero, About } from '../components'
+import axios, { AxiosResponse } from 'axios'
+import { Navigation, Hero, About, Values, Twitter, Footer } from '../components'
 
 const Home: NextPage = () => {
 	return (
-		<div className='relative min-h-[100vh] overflow-x-hidden bg-gray-light dark:bg-blue-dark'>
+		<div className='relative min-h-[100vh] overflow-x-hidden bg-gray-light dark:bg-blue-dark scroll-smooth'>
 			<Head>
 				<title>Delight</title>
 				<meta
@@ -17,6 +18,9 @@ const Home: NextPage = () => {
 			<Navigation />
 			<Hero />
 			<About />
+			<Values />
+			<Twitter />
+			<Footer />
 		</div>
 	)
 }

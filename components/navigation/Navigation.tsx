@@ -1,51 +1,14 @@
 import { useState } from 'react'
 import { useMenu, useDarkMode } from '../../hooks/'
 import { Delight } from '../icons/'
+import { navigationData } from './'
 import { Menu } from '../'
 import {
 	IoMenuOutline,
 	IoCloseOutline,
-	IoHomeOutline,
-	IoInformationOutline,
-	IoChatbubblesOutline,
 	IoSunnyOutline,
 	IoMoonOutline,
 } from 'react-icons/io5'
-import { TbBrandTwitter } from 'react-icons/tb'
-
-type Nav = {
-	id: number
-	name: string
-	path: string
-	icon: JSX.Element
-}[]
-
-const navigationData: Nav = [
-	{
-		id: 1,
-		name: 'Home',
-		path: '#home',
-		icon: <IoHomeOutline />,
-	},
-	{
-		id: 2,
-		name: 'About',
-		path: '#about',
-		icon: <IoInformationOutline />,
-	},
-	{
-		id: 3,
-		name: 'Values',
-		path: '#values',
-		icon: <IoChatbubblesOutline />,
-	},
-	{
-		id: 4,
-		name: 'Tweets',
-		path: '#social',
-		icon: <TbBrandTwitter />,
-	},
-]
 
 const Navigation = () => {
 	const [activeId, setActiveId] = useState(1)
@@ -54,8 +17,8 @@ const Navigation = () => {
 
 	return (
 		<>
-			<nav className='fixed top-0 flex items-center justify-between w-full px-6 lg:px-12 py-3 min-h-[5rem] bg-gray-light dark:bg-blue-dark z-50'>
-				<Delight className='' />
+			<nav className=' fixed top-0 flex items-center justify-between w-full px-6 lg:px-12 py-3 min-h-[5rem] h-[6rem] bg-gray-light dark:bg-blue-dark z-50'>
+				<Delight className='scale-75' />
 
 				<div
 					onClick={toggleMenu}
