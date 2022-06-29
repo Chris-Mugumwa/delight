@@ -21,7 +21,7 @@ const contactData = [
 const Footer = () => {
 	return (
 		<footer className='flex flex-col items-center justify-center w-full gap-2 px-6 py-12 bg-white lg:px-12 lg:py-24 dark:bg-blue-darker'>
-			<Subheading>We'll see you soon</Subheading>
+			<Subheading>See you soon</Subheading>
 
 			<div className='flex items-center justify-between w-full mt-8'>
 				<Delight />

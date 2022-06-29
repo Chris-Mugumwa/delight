@@ -7,7 +7,7 @@ const Description = () => {
 			<p>
 				We are a proud South African brand dedicated to creating healthy,
 				yet delicious frozen custard recipes for your enjoyment. Who said a
-				tasty treat couldn't be healthy too.
+				tasty treat could not be healthy too.
 			</p>
 
 			<p>
