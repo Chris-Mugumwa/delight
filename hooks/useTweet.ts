@@ -9,7 +9,7 @@ const useTweets = () => {
 		error,
 		data: tweets,
 	} = useQuery('twitter', () => {
-		return axios.get(`http://localhost:3001/`)
+		return axios.get(`https://delight-be.herokuapp.com/`)
 	})
 
 	return { isLoading, isFetching, error, tweets, isError }
