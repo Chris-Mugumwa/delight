@@ -1,18 +1,19 @@
-import { useFetchTweets } from '../../hooks'
 import { Subheading, Grid } from '../utils'
 import { TwitterTweetEmbed } from 'react-twitter-embed'
-import { MoonLoader } from 'react-spinners'
 
-type Tweet = {
-	id: string
-	text: string
+type DataProps = {
+	data: {
+		data: {
+			data: {
+				id: string
+				title: string
+			}[]
+		}
+	}
 }
 
-const TwitterFeed = () => {
-	const { isLoading, tweets, isFetching } = useFetchTweets()
-
-	const twitter = tweets?.data?.data?.data
-	console.log(twitter)
+const TwitterFeed = ({ data }: DataProps) => {
+	const twitter = data?.data?.data
 
 	return (
 		<>
@@ -22,10 +23,7 @@ const TwitterFeed = () => {
 				<Subheading>People Love Frozen Custard</Subheading>
 
 				<Grid>
-					{isLoading ||
-						(isFetching && <MoonLoader size='40px' color='#FB8500' />)}
-
-					{twitter?.map((tweet: Tweet) => (
+					{twitter?.map(tweet => (
 						<TwitterTweetEmbed
 							key={tweet.id}
 							tweetId={tweet?.id}

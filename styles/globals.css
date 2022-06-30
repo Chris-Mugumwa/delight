@@ -32,6 +32,10 @@
 	}
 }
 
+* {
+	scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar {
 	width: 0.4rem;
 	height: 3rem;
