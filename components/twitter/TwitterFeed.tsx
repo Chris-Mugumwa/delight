@@ -2,7 +2,6 @@ import { useFetchTweets } from '../../hooks'
 import { Subheading, Grid } from '../utils'
 import { TwitterTweetEmbed } from 'react-twitter-embed'
 import { MoonLoader } from 'react-spinners'
-import toast, { Toaster } from 'react-hot-toast'
 
 type Tweet = {
 	id: string
@@ -10,14 +9,13 @@ type Tweet = {
 }
 
 const TwitterFeed = () => {
-	const { isLoading, tweets, isFetching, isError } = useFetchTweets()
-	const twitter = tweets?.data?.data?.data
+	const { isLoading, tweets, isFetching } = useFetchTweets()
 
-	if (isError) toast.error('Oops, something went wrong!')
+	const twitter = tweets?.data?.data?.data
+	console.log(twitter)
 
 	return (
 		<>
-			<Toaster />
 			<section
 				id='social'
 				className='flex flex-col items-center justify-center w-full min-h-screen gap-2 px-3 py-12 lg:py-24'>
@@ -26,6 +24,7 @@ const TwitterFeed = () => {
 				<Grid>
 					{isLoading ||
 						(isFetching && <MoonLoader size='40px' color='#FB8500' />)}
+
 					{twitter?.map((tweet: Tweet) => (
 						<TwitterTweetEmbed
 							key={tweet.id}

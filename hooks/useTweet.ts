@@ -9,7 +9,7 @@ const useTweets = () => {
 		error,
 		data: tweets,
 	} = useQuery('twitter', () => {
-		return axios.get(`${process.env.NEXT_APP_PORT}`)
+		return axios.get(`https://delight-be.vercel.app/`)
 	})
 
 	return { isLoading, isFetching, error, tweets, isError }
