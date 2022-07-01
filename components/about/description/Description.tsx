@@ -1,6 +1,6 @@
 const Description = () => {
 	return (
-		<main className='flex flex-col justify-center w-full gap-4 px-6 py-24 font-medium text-center lg:py-8 dark:text-gray-light lg:w-1/2 lg:text-lg font-outfit text-gray-dark'>
+		<main className='flex flex-col justify-center w-full gap-4 px-6 py-24 font-medium text-center lg:py-8 dark:text-gray-light lg:w-1/2 lg:text-lg font-catamaran text-gray-dark'>
 			<h2 className='text-2xl font-semibold dark:text-blue-light text-blue-dark font-catamaran lg:text-3xl'>
 				Proudly South African
 			</h2>

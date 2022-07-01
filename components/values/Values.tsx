@@ -17,7 +17,7 @@ const Values = () => {
 						<h2 className='text-xl font-semibold font-catamaran lg:text-3xl text-orange-dark'>
 							{value.name}
 						</h2>
-						<p className='font-outfit text-blue-dark dark:text-gray-light'>
+						<p className='font-catamaran text-blue-dark dark:text-gray-light'>
 							{value.description}
 						</p>
 					</div>
