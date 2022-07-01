@@ -28,6 +28,7 @@ module.exports = {
 			fontFamily: {
 				catamaran: ['Catamaran', 'sans-serif'],
 				'merriweather-sans': ['Merriweather Sans', 'serif'],
+				outfit: ['outfit', 'serif'],
 			},
 		},
 	},

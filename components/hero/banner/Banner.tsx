@@ -7,7 +7,7 @@ const Banner = () => {
 			<Heading>Delight</Heading>
 			<div className='flex '>
 				<span className=' content-["*"] w-1 rounded-full bg-orange-dark' />
-				<p className='mt-3 text-lg font-merriweather-sans w-[85%] md:w-[75%] lg:text-3xl text-gray-800 ml-3 dark:text-gray-300'>
+				<p className='mt-3 text-lg font-outfit w-[85%] md:w-[75%] lg:text-3xl text-gray-800 ml-3 dark:text-gray-300'>
 					Fresh, Organic, Healthy Frozen Custard Straight Out Of Mzanzi!
 				</p>
 			</div>

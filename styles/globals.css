@@ -2,16 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;600&family=Merriweather+Sans:wght@300;400;500&display=swap');
-
-@font-face {
-	font-family: 'Kurale';
-	src: url('/fonts/Kurale.ttf');
-	font-style: medium;
-	font-weight: normal;
-	font-display: swap;
-}
-
 @layer components {
 	.menu {
 		@apply fixed h-screen w-full md:w-[60%] bg-white py-4 px-3 transition-all duration-500 dark:bg-blue-dark flex flex-col md:shadow-lg shadow-black lg:hidden z-50;
@@ -42,7 +32,7 @@
 	}
 }
 
-* {
+html {
 	scroll-behavior: smooth;
 }
 
